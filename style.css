@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg, #9F2BC1, #E1A2B8);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header, form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: #ffffff;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form button{
+    color: #9F2BC1;
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: #9F2BC1;
+    color: #ffffff;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: #ffffff;
+    color: #000;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.trash-btn, .complete-btn{
+    background: #6495ed;
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background: #E1A2B8;
+}
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateX(360deg);
+    opacity: 0.5;
+}
+
+.select .filter-todos{
+    padding: 8px;
+    font-size: 30px;
+    border: none;
+    background: #ffffff;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.select .filter-todos:focus{
+    outline: none;
+}
+
+.filter-todos:hover{
+    background: #6495ed;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
